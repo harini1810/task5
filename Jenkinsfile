@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Compile') {
             steps {
-                sh 'javac Timestamp.java'
+                bat 'javac Timestamp.java'
             }
         }
         stage('Run') {
             steps {
-                sh 'java Timestamp'
+                bat 'java Timestamp'
             }
         }
     }
